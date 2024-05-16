@@ -20,4 +20,4 @@ In fact, this set of devices is widely accepted and actively used by many teache
 
 實際上這組裝置在班級上也被許多老師廣泛接受並且積極使用，有關於程式碼的部分，你可以隨意修改跟使用。
 
-made by LukeTseng.
+made by LukeTseng ( 鼓山高中 _ 電腦社社長 ).
