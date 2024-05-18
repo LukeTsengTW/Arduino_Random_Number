@@ -5,9 +5,9 @@ Arduino_Randomly_Drawing_Numbers
 Author : LukeTseng ( 鼓山高中 _ 電腦社社長 )
 Date : 2024 / 04 / 05 初製作
 
-Version : 1.0.5 版本
+Version : 1.0.6 版本 2024/05/18
 
-Update : 所有抽號結果修改為不重複抽號, 並將部分重複性代碼函數化, 總之是優化整體代碼
+Update : 修復 bug, 先按多號再按單號, 再按一次多號會導致顯示錯誤
  
 */
 
@@ -52,7 +52,7 @@ int normal_init(){   // normal_init(int x) 為避免重複性代碼之函數, �
 }
 
 int button_init(){ 
-  switch_once = false;
+  switch_once = true;
   lcd.clear();
   lcd.setCursor(0, 0);
   lcd.print("Reset number.");
@@ -84,7 +84,7 @@ void setup() {
 void loop() {
   
   if (digitalRead(PIN) == LOW) { // 判斷如果讀取 PIN 腳位的電位是低電位的話則進行單號抽選
-    switch_once = false;
+    switch_once = true;
     if (generated_count >= 37){ // 判斷如果 generated_count >= 37 則重置所有號碼 (放在裡面是因為在外面的話抽到第 37 次則會直接將第 37 次的號碼刷掉, 為了實用性, 再按一次按鈕才能將它刷掉)
       lcd.clear(); // 清空先前的 LCD 面板之訊息
       lcd.setCursor(0, 0); // 表示 LCD 所顯示之位置 (0, 0) 第一行
@@ -113,6 +113,8 @@ void loop() {
   if (digitalRead(MUTIPLE) == LOW) { // 判斷如果讀取 MUTIPLE 腳位的電位是低電位的話則進行多號抽選
     if (switch_once == true){
       lcd.clear();
+      generated_count = 0;
+      i=0;
       switch_once = false;
     }
     do {
