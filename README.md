@@ -12,6 +12,8 @@ New-LiquidCrystal : https://github.com/fmalpartida/New-LiquidCrystal/tree/master
 - Button x 3 (For Mode Change x 2, For Clear Record x 1) （給模式切換的 x 2，給清除打卡紀錄的 x 1）
 - Arduino 1602 LCD Displayer x 1（1602 LCD 顯示屏幕 x 1）
 - BreadBoard x 1
+- DFPlayer Mini Mp3 x 1（Mp3 模組 -> sound_version_only）
+- Speaker x 1（喇叭 -> sound_version_only）
 
 # Comments Language & Introduction （註解語言）
 
