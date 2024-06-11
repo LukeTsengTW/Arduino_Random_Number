@@ -6,6 +6,8 @@ I mainly use it to solve problems in my school life. For example, when a teacher
 
 New-LiquidCrystal : https://github.com/fmalpartida/New-LiquidCrystal/tree/master
 
+DFPlayer Mini Mp3 by Makuna : https://www.arduino.cc/reference/en/libraries/dfplayer-mini-mp3-by-makuna/
+
 # Material (reference) （素材（參考用））
 
 - Arduino Uno x 1
