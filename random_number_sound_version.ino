@@ -5,9 +5,9 @@ Arduino_Randomly_Drawing_Numbers
 Author : LukeTseng ( 鼓山高中 _ 電腦社社長 )
 Date : 2024 / 04 / 05 初製作
 
-Version : 1.0.6 版本 2024/05/18
+Version : 1.0.7 版本 2024/06/11
 
-Update : 修復 bug, 先按多號再按單號, 再按一次多號會導致顯示錯誤
+Update : 新增 Mp3 模組
  
 */
 
