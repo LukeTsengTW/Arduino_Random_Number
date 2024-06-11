@@ -2,6 +2,11 @@
 
 I mainly use it to solve problems in my school life. For example, when a teacher needs to draw lots, they use a lottery box. Some students would secretly remove their number tags. To prevent this issue and ensure fair outcomes, I leveraged my programming skills and Arduino technology to address the problem.
 
+# Code Reference（程式碼參考）
+
+Author Jason Chu, his website : https://blog.jmaker.com.tw/arduino-dfplayer-mp3/
+(我使用此作者的Mp3模組程式碼)
+
 # Librarys （函式庫）
 
 New-LiquidCrystal : https://github.com/fmalpartida/New-LiquidCrystal/tree/master
