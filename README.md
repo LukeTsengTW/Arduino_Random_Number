@@ -2,6 +2,17 @@
 
 I mainly use it to solve problems in my school life. For example, when a teacher needs to draw lots, they use a lottery box. Some students would secretly remove their number tags. To prevent this issue and ensure fair outcomes, I leveraged my programming skills and Arduino technology to address the problem.
 
+# Version
+
+1.0.6 - Fixed a bug. Pressing the multi-number mode first and then the single number mode. Pressing the multi-number mode again will cause an error to be displayed.
+(修復 bug, 先按多號再按單號, 再按一次多號會導致顯示錯誤)
+
+1.0.6.5 (sound_only) - Added MP3 module, and updated the program code so that the corresponding number can be loud out when drawing numbers.
+(新增MP3模組, 更新程式碼, 抽獎時可以大聲說出對應的數字。)
+
+1.0.7 - Replace the full-range drawing with a four-stage drawing. The first four drawing results range as follows: 1~10, 10~20, 20~30, 30~38. The fifth time it returns to the full-range drawing (1~38)
+(將全範圍抽號更換成四段式抽號，前四次抽號結果的範圍如下：1~10、10~20、20~30、30~38，第五次時則還原成全範圍抽號（1~38）)
+
 # Code Reference（程式碼參考）
 
 Author Jason Chu, his website : https://blog.jmaker.com.tw/arduino-dfplayer-mp3/
