@@ -15,7 +15,7 @@ Update : 新增 Mp3 模組
 
 #define PIN 2 // 腳位 2 為單號抽選按鈕
 #define CLEAR 3 // 腳位 3 為清除畫面按鈕
-#define MUTIPLE 4 // 腳位 4 為多號抽選按鈕 (照情況可連抽 5 ~ 6 號)
+#define MUTIPLE 4 // 腳位 4 為連續抽選按鈕 (照情況可連抽 5 ~ 6 號)
 
 #include <DFMiniMp3.h>  
 //使用軟體Serial
