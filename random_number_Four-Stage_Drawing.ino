@@ -15,13 +15,13 @@ Update : 修改成四段式抽取
 
 #define PIN 2 // 腳位 2 為單號抽選按鈕
 #define CLEAR 3 // 腳位 3 為清除畫面按鈕
-#define MUTIPLE 4 // 腳位 4 為多號抽選按鈕 (照情況可連抽 5 ~ 6 號)
+#define MUTIPLE 4 // 腳位 4 為連續抽選按鈕 (照情況可連抽 5 ~ 6 號)
 
 LiquidCrystal_I2C lcd(0x27,2,1,0,4,5,6,7,3,POSITIVE); // LCD 模組初始化
 
 int x = 0; // 抽號結果 : 全域變數
 
-int i = 0; // 多號抽選 : 全域變數 : 抽選多號時兩數字間間隔所需的儲存資料型態的變數
+int i = 0; // 連續抽選 : 全域變數 : 抽選連續抽選時兩數字間間隔所需的儲存資料型態的變數
 
 int draw_stage = 1; // 抽取階段：1-4 表示前四次，5 表示從 1-37 號随機抽取
 
@@ -30,7 +30,7 @@ bool switch_once = true; // 按鈕切換時執行的動作 : 全域變數 : 用�
 int generated_numbers[38]; // 已經由亂數生成的隨機號碼先儲存至陣列當中
 int generated_count = 0; // 確認已經抽選了幾次的號碼, 如果 >= 37 則重置所有號碼
 
-int len(int n){      // len(int n) 為計算數字長度的函數, 用於多號抽選時判斷號碼長度, 以來取數字間間隔
+int len(int n){      // len(int n) 為計算數字長度的函數, 用於連續抽選時判斷號碼長度, 以來取數字間間隔
     int length = 0;  // 初始化局域變數 length = 0
     while(n != 0){  // 如果 n != 0 則執行迴圈
         n /= 10; // 由於整數型態宣告, 所以使用除法時不會有除法, 只會有整數
@@ -139,7 +139,7 @@ void loop() {
     }
   }
 
-  if (digitalRead(MUTIPLE) == LOW) { // 判斷如果讀取 MUTIPLE 腳位的電位是低電位的話則進行多號抽選
+  if (digitalRead(MUTIPLE) == LOW) { // 判斷如果讀取 MUTIPLE 腳位的電位是低電位的話則進行連續抽選
     if (switch_once == true){
       lcd.clear();
       generated_count = 0;
