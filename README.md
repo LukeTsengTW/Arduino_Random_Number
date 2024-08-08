@@ -31,12 +31,21 @@ I mainly use it to solve problems in my school life. For example, when a teacher
 1.0.7 - Replace the full-range drawing with a four-stage drawing. The first four drawing results range as follows: 1`~`10, 10`~`20, 20`~`30, 30`~`38. The fifth time it returns to the full-range drawing (1`~`38)
 (將全範圍抽號更換成四段式抽號，前四次抽號結果的範圍如下：1`~`10、10`~`20、20`~`30、30`~`38，第五次時則還原成全範圍抽號（1`~`38）)
 
+1.0.8 (sound_only) - 
+
+1. Optimize code. (優化程式碼)
+2. Change insertion sort to counting sort. (將插入排序法修改為計數排序法)
+3. Swap the pin positions of CLEAR and MUTIPLE. (交換CLEAR、MUTIPLE的腳位)
+4. Use Arduino’s other library instead : TrueRandom. (改用其他的Arduino隨機數函式庫 : TrueRandom)
+
 # Code Reference（程式碼參考）
 
 Author Jason Chu, his website : https://blog.jmaker.com.tw/arduino-dfplayer-mp3/
 (我使用此作者的Mp3模組程式碼)
 
 # Librarys （函式庫）
+
+TrueRandom : https://github.com/sirleech/TrueRandom
 
 New-LiquidCrystal : https://github.com/fmalpartida/New-LiquidCrystal/tree/master
 
