@@ -179,7 +179,7 @@ void loop() {
     generated_numbers[generated_count] = x; // 將亂數產生的數字放入已生成的亂數陣列 generated_numbers[] 當中
     generated_count++; // generated_count ++, 遞增 1 表示又多一個不重複亂數
 
-    countingSort(generated_numbers, generated_count - 1);
+    countingSort(generated_numbers, generated_count);
 
     startup_init(x); // 呼叫 startup_init(x) 函數, 進行訊息初始化
     delay(250); // 延時 0.3 秒後繼續
@@ -199,7 +199,7 @@ void loop() {
     generated_numbers[generated_count] = x; // 將亂數產生的數字放入已生成的亂數陣列 generated_numbers[] 當中
     generated_count++; // generated_count ++, 遞增 1 表示又多一個不重複亂數
 
-    countingSort(generated_numbers, generated_count - 1);
+    countingSort(generated_numbers, generated_count);
 
     lcd.setCursor(0, 0);
     lcd.print("What you drew is");
