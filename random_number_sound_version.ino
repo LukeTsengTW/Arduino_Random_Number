@@ -3,7 +3,7 @@
 Arduino_Randomly_Drawing_Numbers(Sound_Version)
 
 Author : LukeTseng ( 鼓山高中 _ 電腦社社長 )
-Date : 2024 / 04 / 05 初製作
+Date : 2024 / 03 / 12 初製作
 
 Version : 1.0.8 版本 2024/08/08
 
