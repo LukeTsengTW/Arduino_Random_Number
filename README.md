@@ -42,6 +42,10 @@ I mainly use it to solve problems in my school life. For example, when a teacher
 3. Swap the pin positions of CLEAR and MUTIPLE. (交換CLEAR、MUTIPLE的腳位)
 4. Use Arduino’s other library instead : TrueRandom. (改用其他的Arduino隨機數函式庫 : TrueRandom)
 
+2025/02/24：
+
+- Add the file of ESP32 only（For ESP32 Version but no voice）
+
 # Code Reference（程式碼參考）
 
 Author Jason Chu, his website : https://blog.jmaker.com.tw/arduino-dfplayer-mp3/
