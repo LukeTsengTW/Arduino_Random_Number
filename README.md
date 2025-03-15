@@ -63,6 +63,12 @@ New-LiquidCrystal : https://github.com/fmalpartida/New-LiquidCrystal/tree/master
 
 DFPlayer Mini Mp3 by Makuna : https://www.arduino.cc/reference/en/libraries/dfplayer-mini-mp3-by-makuna/
 
+# MIT App Inventor
+
+I used MIT App Inventor to make a App to realize the internet of things with ESP32.
+
+You can download the .aia file, and import it to do some test.
+
 # Material (reference) （素材（參考用））
 
 - Arduino Uno x 1
@@ -77,6 +83,8 @@ DFPlayer Mini Mp3 by Makuna : https://www.arduino.cc/reference/en/libraries/dfpl
 Comments Language : Traditional Chinese
 
 註解語言：繁體中文
+
+# About program
 
 This program is mainly used to solve problems encountered in school life. For instance, when a teacher conducts a draw to ask students questions, he requires a lottery box. However, some students may surreptitiously remove their lottery sticks, leading to an unfair situation.
 
