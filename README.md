@@ -46,6 +46,10 @@ I mainly use it to solve problems in my school life. For example, when a teacher
 
 - Add the file of ESP32 only（For ESP32 Version but no voice）
 
+2025/03/14：
+
+- Fix some bugs, creating a new app (made by MIT app inventor) for this machine, can use bluetooth to control machine.
+
 # Code Reference（程式碼參考）
 
 Author Jason Chu, his website : https://blog.jmaker.com.tw/arduino-dfplayer-mp3/
